@@ -4,6 +4,7 @@ import { HomeComponent } from './home/home.component';
 import { CatalogComponent } from './catalog/catalog.component';
 import { CartComponent } from './cart/cart.component';
 import { SignInComponent } from './user/sign-in/sign-in.component';
+import { logInGuard } from './guards/log-in.guard';
 
 const routes: Routes = [
   {
@@ -20,6 +21,7 @@ const routes: Routes = [
     path: 'cart',
     component: CartComponent,
     title: "Catalog- Joe's Robot Shop",
+    canActivate: [logInGuard],
   },
   {
     path: 'signIn',

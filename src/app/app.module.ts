@@ -11,6 +11,7 @@ import { CartComponent } from './cart/cart.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { UserModule } from './user/user.module';
+import { HoverDirective } from './directives/hover.directive';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { UserModule } from './user/user.module';
     CartComponent,
     SiteHeaderComponent,
     ProductDetailsComponent,
+    HoverDirective,
   ],
   imports: [
     BrowserModule,
